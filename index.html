@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script type="text/javascript" src="d3.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+    <h1>View each song</h1>
+    <div id="songChart"></div>
+    <h3 id="song-title"></h3>
+    <br>
+    <div class="button-group">
+        <button id="button1">Start Animation</button>
+    </div>
+    <br>
+    <br>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="1" class="slider" id="slider2">
+    </div>
+    
+    
+<!--
+    <ul class="range-labels">
+        <li class="active selected">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+-->
+    <br>
+    <br>
+    
+    <h1>Overlapping top 10 songs</h1>
+    <div id="overlapChart"></div>
+    
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="slider1">
+        <h3 id = song-count>No. of songs : 1</h3>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1>Overlapping songs across the list</h1>
+    <div id="overlapChart2"></div>
+    
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="1" class="slider" id="slider3">
+        <h3 id = song-count2>Rank range : 1 to 10</h3>
+    </div>
+    
+    <script type="text/javascript" src="radarChart.js"></script>
+    <script type="text/javascript" src="dataVis.js"></script>
+</body>
+</html>
