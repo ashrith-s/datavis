@@ -1,0 +1,39 @@
+body {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    fill: #242424;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+    cursor: default;
+			}
+
+.slidecontainer {
+    width: 100% !important; /* Width of the outside container */
+}
+
+.slider{
+    opacity: 0.8; 
+    width: 500px;
+}
+
+/* Mouse-over effects */
+.slider:hover:enabled {
+    opacity: 1;  /* Fully shown on mouse-over */
+}
+
+/* Labels below slider */
+.range-labels {
+  margin: 18px -41px 0;
+  padding: 0;
+  list-style: none;
+}
+.range-labels li {
+  position: relative;
+  float: left;
+  width: 90.25px;
+  text-align: center;
+  color: #b2b2b2;
+  font-size: 14px;
+  cursor: pointer;
+}
