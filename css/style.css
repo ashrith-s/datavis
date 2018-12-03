@@ -6,7 +6,7 @@ body {
     text-align: center;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
     cursor: default;
-			}
+}
 
 .slidecontainer {
     width: 100% !important; /* Width of the outside container */
@@ -36,4 +36,8 @@ body {
   color: #b2b2b2;
   font-size: 14px;
   cursor: pointer;
+}
+
+.songChart {
+    border: 1px solid black;
 }
