@@ -2,7 +2,7 @@ var allText;
 var overlapData = new Array();
 var singleData = new Array();
 var data = new Array();
-var chartSize = 500;
+var chartSize = 450;
 var intervalId;
 var buttonFlag = 0;
 var animateCount;
