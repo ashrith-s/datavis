@@ -6,6 +6,7 @@ body {
     text-align: center;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
     cursor: default;
+    background-color: #66a0ff;
 }
 
 .slidecontainer {
@@ -42,7 +43,22 @@ body {
     display: inline-block;
 }
 
-.button {
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #87b4ff radial-gradient(circle, transparent 1%, #87b4ff 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #7fb0ff;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/*
+button {
     background-color: #1abc9c;
     border: none;
     color: white;
@@ -51,4 +67,35 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+*/
+
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 16px;
+  
+  cursor: pointer;
+  color: white;
+  background-color: #66a0ff;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+
+.frame {
+    display: inline-block;
+/*    padding: 10px 100px 50px 100px;*/
+    width: 700px;
+    height: 700px;
+/*    border-radius: 5px;*/
+/*    border: 1px solid #242424;*/
+    background-color: snow;
+}
+
+.shadow {
+    box-shadow: 1px 10px 30px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 30px 0px rgba(0,0,0,0.75);
 }

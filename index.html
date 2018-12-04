@@ -8,44 +8,61 @@
 </head>
     
 <body>
-    <h1>Individual song</h1>
     
-    <div id="songChart" class="radar"></div>
+    <br>
+    <br>
     
-    <div class="button-group">
-    <button id="button1" class="button">Start Animation</button>
+    <div class="frame shadow">
+        <br>
+        
+        <h1>1. Individual song</h1>
+
+        <div id="songChart" class="radar"></div>
+
+        <h3 id="song-title"></h3>
+
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="1" class="slider" id="slider2">
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="button-group">
+            <button id="button1" class="ripple">Start Animation</button>
+        </div>
     </div>
     
     <br>
-    
-    <h3 id="song-title"></h3>
-   
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="1" class="slider" id="slider2">
-    </div>
-    
     <br>
     <br>
     
-    <h1>Overlapping top 10 songs</h1>
-    <div id="overlapChart" class="radar"></div>
-    
-    <div class="slidecontainer">
-        <input type="range" min="1" max="10" value="1" class="slider" id="slider1">
+    <div class="frame shadow">
+        <br>
+        <br>
+        <h1>2. Overlapping top 10 songs</h1>
+        <div id="overlapChart" class="radar"></div>
+        
         <h3 id = song-count>No. of songs : 1</h3>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="1" class="slider" id="slider1">
+        </div>
     </div>
     
     <br>
     <br>
     <br>
-    <br>
     
-    <h1>Overlapping songs across the list</h1>
-    <div id="overlapChart2" class="radar"></div>
-    
-    <div class="slidecontainer">
-        <input type="range" min="1" max="10" value="1" class="slider" id="slider3">
+    <div class="frame shadow">
+        <br>
+        <br>
+        <br>
+        <h1>3. Overlapping songs across the list</h1>
+        <div id="overlapChart2" class="radar"></div>
         <h3 id = song-count2>Rank range : 1 to 10</h3>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="1" class="slider" id="slider3">
+        </div>
     </div>
     
     <script type="text/javascript" src="radarChart.js"></script>
