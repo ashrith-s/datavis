@@ -18,6 +18,13 @@ var label2 = document.getElementById("song-count");
 //    document.getElementById("RadarChart").innerHTML = "";
 //}
 
+function truncate(string){
+   if (string.length > 30)
+      return string.substring(0,30)+'...';
+   else
+      return string;
+}
+
 function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -108,7 +115,7 @@ function animateChart(){
     intervalId = setInterval(function(){
         i = (++i) % 100;
         prepareSingleData(i, data);
-        label.innerHTML="Rank " + data[i].Rank + " : " + data[i].name;
+        label.innerHTML="Rank " + data[i].Rank + " : " + truncate(data[i].name);
         RadarChart("#songChart", singleData, radarChartOptions);
         slider2.value = i;
     }, 250);
@@ -157,7 +164,7 @@ RadarChart("#overlapChart", overlapData, radarChartOptions);
 
 //Call function to draw the individual Radar charts
 prepareSingleData(0, data);
-label.innerHTML="Rank " + data[0].Rank + " : " + data[0].name;
+label.innerHTML="Rank " + data[0].Rank + " : " + truncate(data[0].name);
 RadarChart("#songChart", singleData, radarChartOptions);
 //console.log(data);
 
@@ -179,7 +186,7 @@ slider2.oninput = function() {
     var count = this.value - 1;
     prepareSingleData(count, data);
     
-    label.innerHTML="Rank " + data[count].Rank + " : " + data[count].name;
+    label.innerHTML="Rank " + data[count].Rank + " : " + truncate(data[count].name);
     //Call function to draw the Radar chart
     RadarChart("#songChart", singleData, radarChartOptions);
 }//oninput function
