@@ -6,16 +6,8 @@ body {
     text-align: center;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
     cursor: default;
-    background-color: #66a0ff;
+    background-color: #141113;
 }
-
-/*
-#song-title {
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-*/
 
 .slidecontainer {
     width: 100% !important; /* Width of the outside container */
